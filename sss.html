@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sıkça Sorulan Sorular - Almanya'da Eğitim</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .faq-container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .faq-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .faq-list li {
+            margin-bottom: 15px;
+        }
+        .faq-list li button {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            font-size: 16px;
+            text-align: left;
+            border: none;
+            cursor: pointer;
+            outline: none;
+            border-radius: 5px;
+        }
+        .faq-list li button:hover {
+            background-color: #45a049;
+        }
+        .details {
+            display: none;
+            padding: 10px;
+            background-color: #f2f2f2;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+    </style>
+    <script>
+        function toggleDetails(detailId) {
+            var details = document.querySelectorAll('.details');
+            details.forEach(function(detail) {
+                detail.style.display = 'none';
+            });
+            document.getElementById(detailId).style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+
+<div class="faq-container">
+    <h1>Almanya'da Eğitim - Sıkça Sorulan Sorular</h1>
+    <ul class="faq-list">
+        <li>
+            <button onclick="toggleDetails('details1')">Almanya’da üniversite eğitimi ücretli mi?</button>
+            <div id="details1" class="details">
+                <p>Almanya'daki devlet üniversitelerinde lisans eğitimi genellikle ücretsizdir. Özel üniversiteler ve bazı eyaletler uluslararası öğrencilerden yıllık €1,500 - €3,000 arasında harç talep edebilir.</p>
+            </div>
+        </li>
+        <li>
+            <button onclick="toggleDetails('details2')">Almanya’da yaşam maliyeti nedir?</button>
+            <div id="details2" class="details">
+                <p>Almanya'da yaşam maliyeti, şehirden şehire değişmekle birlikte ortalama olarak aylık €800-€1,200 arasında değişir. Bu maliyete konaklama, ulaşım, yiyecek ve sağlık sigortası gibi temel giderler dahildir.</p>
+            </div>
+        </li>
+        <li>
+            <button onclick="toggleDetails('details3')">Almanya’da eğitim almak için dil yeterliliği nasıl kanıtlanır?</button>
+            <div id="details3" class="details">
+                <p>Almanca programlar için TestDaF, Telc veya DSH sınavı; İngilizce programlar için ise TOEFL veya IELTS sonuçları gereklidir. Bazı üniversiteler kendi dil sınavlarını da kabul edebilir.</p>
+            </div>
+        </li>
+        <li>
+            <button onclick="toggleDetails('details4')">Almanya’da hangi üniversiteler uluslararası öğrencilere uygun?</button>
+            <div id="details4" class="details">
+                <p>Berlin, Münih, Heidelberg gibi büyük şehirlerdeki üniversiteler, geniş uluslararası öğrenci kitlelerine uygun programlar sunar. Küçük şehirlerde ise eğitim ve yaşam maliyetleri daha düşük olabilir.</p>
+            </div>
+        </li>
+        <li>
+            <button onclick="toggleDetails('details5')">Almanya’da öğrenci vizesi nasıl alınır?</button>
+            <div id="details5" class="details">
+                <p>Öğrenci vizesi almak için üniversite kabul mektubu, bloke hesap, sağlık sigortası ve dil yeterlilik belgesi gereklidir. Vize başvuruları genellikle 2-3 ay içinde sonuçlanır.</p>
+            </div>
+        </li>
+        <li>
+            <button onclick="toggleDetails('details6')">Bloke hesap nedir ve nasıl açılır?</button>
+            <div id="details6" class="details">
+                <p>Bloke hesap, Almanya’da bir yıl boyunca yaşam giderlerinizi karşılayabileceğinizi gösteren bir hesaptır. Yıllık yaklaşık €11,000 bu hesaba yatırılmalıdır. Bu belge vize başvurusunda istenir.</p>
+            </div>
+        </li>
+        <li>
+            <button onclick="toggleDetails('details7')">Almanya’da çalışma izni var mı?</button>
+            <div id="details7" class="details">
+                <p>Uluslararası öğrenciler, yılda 120 tam gün veya 240 yarım gün çalışabilirler. Mezun olduktan sonra 18 aylık iş arama izni ile Almanya’da kalma hakkına sahip olabilirler.</p>
+            </div>
+        </li>
+                <li>
+            <button onclick="toggleDetails('details8')">Almanya’da diploma denkliği nasıl alınır?</button>
+            <div id="details8" class="details">
+                <p>Denklik işlemi, mezun olunan bölüm ve mesleğe göre değişir. Almanya'da çalışmak veya eğitimine devam etmek isteyenler, diploma denklik sürecini tamamlamalıdır.</p>
+            </div>
+        </li>
+        <li>
+            <button onclick="toggleDetails('details9')">Almanya’da okumak için hangi belgeler gereklidir?</button>
+            <div id="details9" class="details">
+                <p>Pasaport, üniversite kabul mektubu, sağlık sigortası, bloke hesap, dil yeterlilik belgesi, diploma ve transkript başvuru için gerekli belgeler arasındadır.</p>
+            </div>
+        </li>
+        <li>
+            <button onclick="toggleDetails('details10')">Almanya'da staj yapma fırsatları var mı?</button>
+            <div id="details10" class="details">
+                <p>Almanya'daki üniversiteler, öğrencilere zorunlu ve gönüllü staj yapma fırsatları sunar. Ayrıca, birçok şirket de öğrencilere yönelik staj imkanları sağlar.</p>
+            </div>
+        </li>
+        <li>
+            <button onclick="toggleDetails('details11')">Almanya’da sosyal yaşam nasıldır?</button>
+            <div id="details11" class="details">
+                <p>Almanya, kültürel açıdan zengin bir ülke olup, festivaller, öğrenci kulüpleri ve sosyal etkinliklerle doludur. Özellikle büyük şehirlerdeki öğrenciler için çok sayıda sosyal aktivite imkanı bulunur.</p>
+            </div>
+        </li>
+        <li>
+            <button onclick="toggleDetails('details12')">Almanya’da sağlık sigortası zorunlu mu?</button>
+            <div id="details12" class="details">
+                <p>Evet, Almanya’da sağlık sigortası zorunludur. Kamu sağlık sigortası aylık yaklaşık €110-€120 tutarındadır ve devlet hastanelerinde sağlık hizmeti almanızı sağlar.</p>
+            </div>
+        </li>
+        <li>
+            <button onclick="toggleDetails('details13')">Almanya’da konaklama seçenekleri nelerdir?</button>
+            <div id="details13" class="details">
+                <p>Yurtlar, paylaşımlı daireler (WG) ve özel kiralık daireler öğrencilere sunulan başlıca konaklama seçenekleridir. Şehir merkezinde kiralar genellikle daha yüksektir.</p>
+            </div>
+        </li>
+        <li>
+            <button onclick="toggleDetails('details14')">Almanya’da üniversite başvurusu nasıl yapılır?</button>
+            <div id="details14" class="details">
+                <p>Başvurular, doğrudan üniversitelerin web siteleri üzerinden veya Uni-Assist gibi merkezi başvuru sistemleri aracılığıyla yapılır. Gerekli belgelerin eksiksiz sunulması önemlidir.</p>
+            </div>
+        </li>
+        <li>
+            <button onclick="toggleDetails('details15')">Motivasyon mektubu nasıl yazılır?</button>
+            <div id="details15" class="details">
+                <p>Motivasyon mektubu, başvurduğunuz program hakkında neden bu eğitimi almak istediğinizi ve kariyer hedeflerinizi anlatan kişisel bir yazıdır. Profesyonel bir dille yazılması başarı şansını artırır.</p>
+            </div>
+        </li>
+        <li>
+            <button onclick="toggleDetails('details16')">Almanya’da öğrenciler için en uygun şehirler hangileridir?</button>
+            <div id="details16" class="details">
+                <p>Berlin, Münih ve Heidelberg, hem eğitim hem de sosyal yaşam açısından popülerdir. Ancak daha küçük şehirlerde de uygun maliyetlerle kaliteli eğitim almak mümkündür.</p>
+            </div>
+        </li>
+        <li>
+            <button onclick="toggleDetails('details17')">Almanya’da üniversite eğitimine başlamak için ne zaman başvuru yapılmalıdır?</button>
+            <div id="details17" class="details">
+                <p>Almanya'da üniversiteler, başvuruları genellikle kış ve yaz dönemleri için kabul eder. Kış dönemi başvuruları için son tarih genellikle temmuz, yaz dönemi için ise ocak ayıdır.</p>
+            </div>
+        </li>
+        <li>
+            <button onclick="toggleDetails('details18')">Almanya’da dil kursları var mı?</button>
+            <div id="details18" class="details">
+                <p>Almanya’da üniversiteler ve özel dil okulları, Almanca öğrenmek isteyen öğrencilere çeşitli dil kursları sunmaktadır. Bu kurslar genellikle uygun fiyatlıdır.</p>
+            </div>
+        </li>
+    </ul>
+</div>
+
+</body>
+</html>
