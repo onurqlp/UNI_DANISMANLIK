@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Eğitim Danışmanlık Paketlerimiz, Almanya'da üniversite eğitimi almak isteyen öğrencilere geniş kapsamlı hizmetler sunmaktadır. Belgelerin toplanmasından vize başvurusuna, konaklama düzenlemesinden dil kursu ve sınav ücretlerinin karşılanmasına kadar tam destek sağlıyoruz.">
+    <meta name="keywords" content="Almanya'da eğitim, üniversite başvurusu, vize desteği, belge tercümesi, Almanca kursu, Almanya konaklama">
+    <meta name="author" content="Ankara Yabancı Dil Akademisi">
+    <title>Eğitim Danışmanlık Paketleri</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 15px;
+            text-align: left;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            display: inline-block;
+            font-size: 14px;
+            margin: 5px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background-color: #45a049;
+        }
+        .details {
+            display: none;
+            padding: 10px;
+            border: 1px solid #ddd;
+            margin-top: 10px;
+        }
+        .active {
+            display: block;
+        }
+        @media only screen and (max-width: 600px) {
+            table, th, td {
+                font-size: 12px;
+            }
+            .btn {
+                padding: 8px 15px;
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Eğitim Danışmanlık Paketleri - Ayrıcalıklı Hizmetleriniz</h1>
+    <table>
+        <tr>
+            <th>Hizmetler</th>
+            <th>Basic Eğitim Bronz</th>
+            <th>Basic Eğitim Gümüş</th>
+            <th>Altın Eğitim</th>
+        </tr>
+        <tr>
+            <td>1. Belge Toplama ve Düzenleme <a href="#buton1" class="btn" onclick="toggleDetails('details1')">Detay</a></td>
+            <td>✓ Belgelerinizi eksiksiz topluyoruz.</td>
+            <td>✓ Belgelerinizi dikkatle topluyoruz ve düzenliyoruz.</td>
+            <td>✓ Belgeleriniz başvuruya tam hazır hale getiriliyor.</td>
+        </tr>
+        <tr>
+            <td>2. Belge Tercümesi <a href="#buton2" class="btn" onclick="toggleDetails('details2')">Detay</a></td>
+            <td>✓ Belgeleriniz tercüme edilir (noter hariç).</td>
+            <td>✓ Belgeleriniz titizlikle tercüme edilir (noter hariç).</td>
+            <td>✓ Belgeleriniz noter onaylı şekilde tercüme edilir.</td>
+        </tr>
+        <tr>
+            <td>3. Üniversite Başvuru Desteği <a href="#buton3" class="btn" onclick="toggleDetails('details3')">Detay</a></td>
+            <td>✓ Başvuru formu ve belgeler hazırlanır.</td>
+            <td>✓ Başvurunuz profesyonelce yapılır.</td>
+            <td>✓ Tüm başvurular tam kapsamlı destekle yapılır.</td>
+        </tr>
+        <tr>
+            <td>4. Vize Başvuru Desteği <a href="#buton4" class="btn" onclick="toggleDetails('details4')">Detay</a></td>
+            <td>✓ Vize başvuru formu ve dosya hazırlanır.</td>
+            <td>✓ Vize başvuru süreçleriniz eksiksiz yönetilir.</td>
+            <td>✓ Vize işlemleriniz güvenle organize edilir.</td>
+        </tr>
+        <tr>
+            <td>5. Dil Kursu ve Dil Sınavı Danışmanlığı <a href="#buton5" class="btn" onclick="toggleDetails('details5')">Detay</a></td>
+            <td>✓ Kurs ve sınav kayıt desteği.</td>
+            <td>✓ Uygun kurs ve sınavlar için danışmanlık.</td>
+            <td>✓ Dil kursu ve sınav ücretleriniz karşılanır.</td>
+        </tr>
+        <tr>
+            <td>6. Geri Bildirim ve Süreç Takibi <a href="#buton6" class="btn" onclick="toggleDetails('details6')">Detay</a></td>
+            <td>✓ Süreçte sizi bilgilendiriyoruz.</td>
+            <td>✓ Gelişmeler hakkında sürekli bilgi alacaksınız.</td>
+            <td>✓ Her adımda size özel geri bildirimlerle süreç yakından takip edilir.</td>
+        </tr>
+        <tr>
+            <td>7. Öğrenci Bilgilendirme Rehberi <a href="#buton7" class="btn" onclick="toggleDetails('details7')">Detay</a></td>
+            <td>✓ Almanya’da yaşam rehberiniz hazır.</td>
+            <td>✓ Daha kapsamlı bilgilendirme rehberi alırsınız.</td>
+            <td>✓ Detaylı rehber ve Almanya'da ilk ay yapmanız gereken her şey sağlanır.</td>
+        </tr>
+        <tr>
+            <td>8. Üniversite ve Bölüm Araştırması <a href="#buton8" class="btn" onclick="toggleDetails('details8')">Detay</a></td>
+            <td>✓ Üniversite ve bölüm seçenekleri sunulur.</td>
+            <td>✓ Kişiye uygun detaylı üniversite ve bölüm seçenekleri sunulur.</td>
+            <td>✓ Size en uygun üniversiteler ve bölümler bulunur.</td>
+        </tr>
+        <tr>
+            <td>9. Motivasyon Mektubu Hazırlama <a href="#buton9" class="btn" onclick="toggleDetails('details9')">Detay</a></td>
+            <td></td>
+            <td>✓ Motivasyon mektubunuz düzenlenir.</td>
+            <td>✓ Profesyonel ve etkili motivasyon mektubunuz yazılır.</td>
+        </tr>
+        <tr>
+            <td>10. CV Hazırlama ve Düzenleme <a href="#buton10" class="btn" onclick="toggleDetails('details10')">Detay</a></td>
+            <td></td>
+            <td>✓ CV’niz profesyonelce hazırlanır.</td>
+            <td>✓ CV’niz baştan sona yeniden yazılır, fark yaratır.</td>
+        </tr>
+        <tr>
+            <td>11. Noter ve Apostil Hizmetleri <a href="#buton11" class="btn" onclick="toggleDetails('details11')">Detay</a></td>
+            <td></td>
+            <td></td>
+            <td>✓ Belgeleriniz noter onaylı hale getirilir.</td>
+        </tr>
+        <tr>
+            <td>12. Konaklama ve Yerleşim Desteği <a href="#buton12" class="btn" onclick="toggleDetails('details12')">Detay</a></td>
+            <td></td>
+            <td></td>
+            <td>✓ Almanya’da konaklamanız güvence altına alınır.</td>
+        </tr>
+        <tr>
+            <td>13. Almanya Dil Kursu ve Dil Sınavı Ücretleri <a href="#buton13" class="btn" onclick="toggleDetails('details13')">Detay</a></td>
+            <td></td>
+            <td></td>
+            <td>✓ Dil kursu ve sınav ücretleriniz karşılanır.</td>
+        </tr>
+        <tr>
+            <td>14. Doğrudan Kontenjan Sağlama <a href="#buton14" class="btn" onclick="toggleDetails('details14')">Detay</a></td>
+            <td></td>
+            <td></td>
+            <td>✓ Üniversitelerde size özel doğrudan kontenjan sağlanır.</td>
+        </tr>
+        <tr>
+            <td>15. Telefon Hattı ve Banka Hesabı Açma <a href="#buton15" class="btn" onclick="toggleDetails('details15')">Detay</a></td>
+            <td></td>
+            <td></td>
+            <td>✓ Almanya’da telefon hattı ve banka hesabı açılır.</td>
+        </tr>
+        <tr>
+            <td>16. Bloke Hesap Açma Danışmanlığı <a href="#buton16" class="btn" onclick="toggleDetails('details16')">Detay</a></td>
+            <td></td>
+            <td></td>
+            <td>✓ Bloke hesap açma işlemleriniz titizlikle yapılır.</td>
+        </tr>
+        <tr>
+            <td>17. Sağlık Sigortası Danışmanlığı <a href="#buton17" class="btn" onclick="toggleDetails('details17')">Detay</a></td>
+            <td></td>
+            <td></td>
+            <td>✓ Almanya’da zorunlu sağlık sigortanız sorunsuz şekilde düzenlenir.</td>
+        </tr>
+        <tr>
+            <td>18. Kültürel Uyum ve İlk Ay Rehberliği <a href="#buton18" class="btn" onclick="toggleDetails('details18')">Detay</a></td>
+            <td></td>
+            <td></td>
+            <td>✓ Almanya’ya tam uyum sağlayacaksınız, ilk ay her adımda yanınızdayız.</td>
+        </tr>
+    </table>
+        <div id="details1" class="details">
+        <h3>1. Belge Toplama ve Düzenleme</h3>
+        <p>Bronz Paket: Gerekli belgeleri topluyor ve düzenlemen için sana rehberlik ediyoruz. Belgelerini bize sağlıyorsun, biz de senin için eksiksiz bir dosya oluşturuyoruz.</p>
+        <p>Gümüş Paket: Belgelerin toplanmasının yanı sıra, her belgenin profesyonelce düzenlenmesini sağlıyoruz. Yanlış belge göndermemeni sağlayarak başvurularının geri çevrilme olasılığını en aza indiriyoruz.</p>
+        <p>Altın Paket: Tüm belgeleri senin adına topluyor, düzenliyor ve başvuruya tam hazır hale getiriyoruz. Hiçbir detayı kaçırmadan başvuru dosyanı tamamlıyoruz.</p>
+    </div>
+
+    <div id="details2" class="details">
+        <h3>2. Belge Tercümesi</h3>
+        <p>Bronz Paket: Belgelerin gerekli dile (Almanca veya İngilizce) çevrilir, ancak noter onaylı tercüme masrafları öğrenciye aittir.</p>
+        <p>Gümüş Paket: Belgelerin tercümesi titizlikle yapılır ve hata oranını minimize ederiz. Yine noter masrafları öğrenciye yansıtılır.</p>
+        <p>Altın Paket: Tüm belgelerin noter onaylı tercümesi de yapılır, böylece belgeler resmî süreçlere tam uyum sağlar.</p>
+    </div>
+
+    <div id="details3" class="details">
+        <h3>3. Üniversite Başvuru Desteği</h3>
+        <p>Bronz Paket: Başvuru formunu doldurman ve gerekli belgeleri eklemen için rehberlik ediyoruz.</p>
+        <p>Gümüş Paket: Başvurunu profesyonel şekilde biz yapıyoruz. Belgelerin eksiksiz olmasını sağlıyoruz. Reddedilme riskini azaltıyoruz.</p>
+        <p>Altın Paket: Başvuru süreçlerinin tümünü senin adına yönetiyoruz. Her şey eksiksiz ve tam zamanında hazırlanıp gönderilir.</p>
+    </div>
+
+    <!-- Add similar sections for other details -->
+
+    <script>
+        function toggleDetails(detailId) {
+            var details = document.querySelectorAll('.details');
+            details.forEach(function(detail) {
+                detail.classList.remove('active');
+            });
+            document.getElementById(detailId).classList.add('active');
+        }
+    </script>
+</div>
+</body>
+</html>
+
+
