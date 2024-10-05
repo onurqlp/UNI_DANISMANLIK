@@ -88,19 +88,27 @@
             <th>Basic Eğitim Gümüş</th>
             <th>Altın Eğitim</th>
         </tr>
-         <!-- "Gerekli Belgeler" Butonu -->
-    <button class="btn" onclick="showDocuments()">Gerekli Belgeler</button>
+    <!-- Gerekli Belgeler ve SSS Butonları -->
+<button class="btn" onclick="showDocuments()">Gerekli Belgeler</button>
+<button class="btn" onclick="showFaq()">Sıkça Sorulan Sorular</button>
+<iframe id="documentsFrame" src="" style="display:none; width: 100%; height: 500px; border: none;"></iframe>
+
 
     <!-- Belgeler sayfası için iframe -->
-    <iframe id="documentsFrame" src="" style="display:none;"></iframe>
+  <script>
+    function showDocuments() {
+        var iframe = document.getElementById('documentsFrame');
+        iframe.src = 'belgeler.html'; // belgeler.html dosyasını yükler
+        iframe.style.display = 'block'; // iframe'i görünür yapar
+    }
 
-    <script>
-        function showDocuments() {
-            var iframe = document.getElementById('documentsFrame');
-            iframe.src = 'belgeler.html';  // belgeler.html dosyasını buradan çağırıyoruz
-            iframe.style.display = 'block'; // iframe'i görünür hale getiriyoruz
-        }
-    </script>
+    function showFaq() {
+        var iframe = document.getElementById('documentsFrame');
+        iframe.src = 'sss.html';  // sss.html dosyasını yükler
+        iframe.style.display = 'block'; // iframe'i görünür yapar
+    }
+</script>
+
 
 </div>
 
