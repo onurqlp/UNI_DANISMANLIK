@@ -88,6 +88,22 @@
             <th>Basic Eğitim Gümüş</th>
             <th>Altın Eğitim</th>
         </tr>
+         <!-- "Gerekli Belgeler" Butonu -->
+    <button class="btn" onclick="showDocuments()">Gerekli Belgeler</button>
+
+    <!-- Belgeler sayfası için iframe -->
+    <iframe id="documentsFrame" src="" style="display:none;"></iframe>
+
+    <script>
+        function showDocuments() {
+            var iframe = document.getElementById('documentsFrame');
+            iframe.src = 'belgeler.html';  // belgeler.html dosyasını buradan çağırıyoruz
+            iframe.style.display = 'block'; // iframe'i görünür hale getiriyoruz
+        }
+    </script>
+
+</div>
+
         <tr>
             <td>1. Belge Toplama ve Düzenleme <a href="#buton1" class="btn" onclick="toggleDetails('details1')">Detay</a></td>
             <td>✓ Belgelerinizi eksiksiz topluyoruz.</td>
